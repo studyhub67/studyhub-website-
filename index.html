@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudyHub — simple study notes and PDF resources for students.">
+  <title>StudyHub | Learn. Understand. Succeed.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>Study<span class="brand-blue">Hub</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#subjects">Subjects</a><a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">YOUR STUDY SPACE</span>
+        <h1>Learn better.<br><span>Go further.</span></h1>
+        <p>Clear notes and helpful PDF resources to make studying easier, one topic at a time.</p>
+        <a class="primary-btn" href="#subjects">Explore subjects <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-circle"></div><div class="paper paper-back"></div>
+        <div class="paper paper-front"><div class="paper-top"></div><i></i><i></i><i class="short"></i><b>StudyHub</b></div>
+        <div class="floating-star">✦</div><div class="floating-dot"></div>
+      </div>
+    </section>
+
+    <section class="section" id="subjects">
+      <div class="section-heading">
+        <div><span class="eyebrow">START LEARNING</span><h2>Explore subjects</h2></div>
+        <p>Choose a subject to find its study materials.</p>
+      </div>
+      <div class="subject-grid">
+        <article class="subject-card">
+          <div class="subject-icon civil">⌂</div><h3>Civil Engineering</h3>
+          <p>Engineering concepts, class notes and useful reference PDFs.</p>
+          <a href="notes/civil-engineering.pdf" class="resource-link" download>Download notes <span>↓</span></a>
+          <small>PDF resource slot</small>
+        </article>
+        <article class="subject-card">
+          <div class="subject-icon math">∑</div><h3>Mathematics</h3>
+          <p>Formulas, worked examples and revision material.</p>
+          <a href="notes/mathematics.pdf" class="resource-link" download>Download notes <span>↓</span></a>
+          <small>PDF resource slot</small>
+        </article>
+        <article class="subject-card">
+          <div class="subject-icon physics">⚛</div><h3>Physics</h3>
+          <p>Important principles, explanations and study resources.</p>
+          <a href="notes/physics.pdf" class="resource-link" download>Download notes <span>↓</span></a>
+          <small>PDF resource slot</small>
+        </article>
+        <article class="subject-card">
+          <div class="subject-icon english">Aa</div><h3>English</h3>
+          <p>Writing, grammar and reading resources for students.</p>
+          <a href="notes/english.pdf" class="resource-link" download>Download notes <span>↓</span></a>
+          <small>PDF resource slot</small>
+        </article>
+      </div>
+      <p class="note-tip"><strong>For the owner:</strong> Add your PDF files to the <code>notes</code> folder and use the exact filenames shown on each card. The download links will then work.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-icon">✦</div>
+      <div><span class="eyebrow">ABOUT STUDYHUB</span><h2>Knowledge made simpler.</h2>
+        <p>StudyHub is a simple learning space made for students. Its goal is to keep useful notes and PDF study materials organised and easy to access on phones, tablets and computers.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">S</span><span>Study<span class="brand-blue">Hub</span></span></a><p>Learn. Understand. Succeed.</p><small>© <span id="year"></span> StudyHub</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
